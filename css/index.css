@@ -133,17 +133,56 @@ nav ul li a:hover{
 
 /* FIN HEADER */
 
-
+/* INICIO MAIN */
 .main {
     display: block;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 3rem 1.5em;
+    
     background-color: #000000;
 }
 
-.seccion-titulo h1 {
+.d-item {
+    height: 680px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) ;
+}
+
+.title-1 {
+    color: #ffd342;
+    text-shadow: 1px 3px red;
+}
+
+.title-2 {
+    color: #000;
+    text-shadow: 1px 3px #fff;
+}
+
+.title-3 {
+    text-shadow: 1px 3px #ffd342;
+}
+
+.title-4 {
+    color: #fff;
+    text-shadow: 1px 3px #000;
+}
+
+.btn {
+    margin-top: 380px;
+    background: #00c9bd;
+}
+
+.btn:hover {
+    background: #000;
+    color: #00c9bd;
+}
+
+/*.seccion-titulo h1 {
     color: #00c9bd;
     font-size: 3rem;
     text-align: center;
@@ -152,7 +191,7 @@ nav ul li a:hover{
     text-transform: uppercase;
     background-color: #000000;
     display: block;
-}
+}*/
 
 
 
