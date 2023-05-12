@@ -139,7 +139,13 @@ nav ul li a:hover{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
     
+}
+
+.seccion-1 {
+    display: block;
+    width: 100%;
     background-color: #000000;
 }
 
@@ -181,6 +187,18 @@ nav ul li a:hover{
     background: #000;
     color: #00c9bd;
 }
+
+.seccion-2 {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+}
+
+.izquierda-1 {
+    background-color: gainsboro;
+}
+
+
 
 /*.seccion-titulo h1 {
     color: #00c9bd;
