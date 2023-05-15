@@ -10,8 +10,6 @@
 
 body {
     background-color: #3a506b;
-
-    
 }
 
 
@@ -113,6 +111,7 @@ nav ul li a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1000;
     }
     nav ul li {
         display: block;
@@ -139,7 +138,6 @@ nav ul li a:hover{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
     
 }
 
@@ -195,22 +193,50 @@ nav ul li a:hover{
 }
 
 .izquierda-1 {
-    background-color: gainsboro;
+    background-color: #0b132b;
+}
+
+.izquierda-1 h3 {
+    color: #00c9bd;
+}
+
+.izquierda-1 h4{
+    color: #fff;
+}
+
+.izquierda-1 h4 span {
+    color: #00c9bd;
 }
 
 
+.lista-s2 ol li{
+    background: #000;
+    color: #fff;
+    border: 2px solid #00c9bd;    
+}
 
-/*.seccion-titulo h1 {
-    color: #00c9bd;
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 2rem;
-    font-weight: 900;
-    text-transform: uppercase;
-    background-color: #000000;
-    display: block;
-}*/
+.derecha-1 {
+    background: #0b132b;
+}
 
+.derecha-1 h5 {
+    color: #fff;
+}
+
+.derecha-1 img {
+    border: 5px solid #00c9bd;
+    border-radius: 15px;
+}
+
+.derecha-1 h6 {
+    color: #fff;
+}
+
+.btn-1 {
+    margin-top: 50px;
+    margin-left: 10px;
+   
+}
 
 
 /* INICIO  SECCION 
@@ -310,6 +336,7 @@ footer {
 
 .contenedor-central {
     display: flex;
+    background-color: #000;
 }
 
 .contenedor-central .caja {
