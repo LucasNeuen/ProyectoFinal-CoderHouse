@@ -467,3 +467,13 @@ footer {
     text-align: center;
     }
 }
+
+@media (max-width: 335px) {
+    .social a {
+        margin-right: 5px;
+        text-align: center;
+        }
+    .central .contenedor-1 .texto {
+        font-size: 13px;
+    }
+}
