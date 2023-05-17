@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--ESTILOS AGREGADOS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+
     <!--ESTILO PROPIO-->
     <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/sucursales.css">
@@ -15,6 +19,10 @@
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="botoncheck">
+                <i class="fas fa-bars"></i>
+            </label>
             <a class="logo" href="../index.html">TarjetaX</a>
             <ul>
                 <li>
@@ -33,13 +41,82 @@
         </nav>
     </header>
 
-<br>
-
     <main class="main">
-        <h1>Sucursales</h1>
+        <section class="seccion-1" >
+            <div class="d-flex justify-content-center aling-items-center"></div>
+        </section>
+
+        <section class="mt-2 seccion-2">
+            <h1 class="mb-5 mt-3 display-4 fw-bolder text-center" data-aos="fade-down" data-aos-duration="1000">TarjetaX</h1>
+
+            <div class="row">
+
+                <div class="col-12 col-md-6 mapa" data-aos="fade-right" data-aos-duration="1000">
+                    <iframe class="mx-auto rounded d-block img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54343.3245164243!2d-63.93965270753176!3d-31.64869316965143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cafff1f1cec1%3A0xf370c1a41d5322ac!2zUsOtbyBTZWd1bmRvLCBDw7NyZG9iYQ!5e0!3m2!1ses-419!2sar!4v1684298673930!5m2!1ses-419!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 col-md-6 sucursales" data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="fw-bolder fs-3 mb-5 text-center ">Sucursales y Cajeros</h3>
+                    <div class="form-floating w-75 mx-auto">
+                        <select class="form-select mt-3 mb-5" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>-</option>
+                          <option value="1">Buenos Aires</option>
+                          <option value="2">Catamarca</option>
+                          <option value="3">Chaco</option>
+                          <option value="4">Chubut</option>
+                          <option value="5">Cordoba</option>
+                          <option value="6">Corrientes</option>
+                          <option value="7">Entre Rios</option>
+                          <option value="8">Formosa</option>
+                          <option value="9">Jujuy</option>
+                          <option value="10">La Pampa</option>
+                          <option value="11">La Rioja</option>
+                          <option value="12">Mendoza</option>
+                          <option value="13">Misiones</option>
+                          <option value="14">Neuquen</option>
+                          <option value="15">Rio Negro</option>
+                          <option value="16">Salta</option>
+                          <option value="17">San Juan</option>
+                          <option value="18">San Luis</option>
+                          <option value="19">Santa Cruz</option>
+                          <option value="20">Santa Fe</option>
+                          <option value="21">Santiago del Estero</option>
+                          <option value="22">Tierra del Fuego</option>
+                          <option value="23">Tucuman</option>
+                        </select>
+                        <label for="floatingSelect">Seleccione su Provincia</label>
+                    </div>
+                
+
+                    <div class="form-check w-50 mx-auto">
+                        <input class="form-check-input fs-4 " type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label fs-4 " for="flexCheckDefault">
+                        Cajero RedLink
+                        </label>
+                    </div>
+                    <div class="form-check w-50 mx-auto">
+                        <input class="form-check-input fs-4" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label fs-4 " for="flexCheckChecked">
+                        Retiro Efectivo
+                        </label>
+                    </div>
+                    <div class="form-check w-50 mx-auto">
+                        <input class="form-check-input fs-4 " type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label fs-4 " for="flexCheckChecked">
+                        Punto TarjetaX
+                        </label>
+                    </div>
+                    <div class="form-check w-50 form-switch mx-auto">
+                        <input class="form-check-input fs-4 mt-5" type="checkbox" name="" id="">
+                        <label class="form-check-label fs-4 mt-5" for="check1">Activar ubicacion</label>
+                    </div>
+                        
+                </div>
+
+            </div>
+        </section>
     </main>
-    
-<br>
+
 
     <footer class="footer">
         <div class="contenedor-central">
@@ -103,5 +180,12 @@
         </div>
     </footer>
     
+
+    <!--ESTILOS JAVASCRIP-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
