@@ -47,7 +47,7 @@ nav {
 
 nav ul {
     float: right;
-   
+   z-index: 1000;
 }
 
 nav ul li {

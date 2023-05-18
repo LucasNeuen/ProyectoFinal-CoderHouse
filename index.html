@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--ESTILOS AGREGADOS-->
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
         <nav>
            <input type="checkbox" id="check">
             <label for="check" class="botoncheck">
@@ -44,7 +44,7 @@
     </header>
 
     <main class="main">
-        <section class="seccion-1">
+        <section class="seccion-1"data-aos="zoom-in" data-aos-duration="1000" >
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"aria-current="true" aria-label="Slide 1"></button>
@@ -106,7 +106,7 @@
 
         <section class="seccion-2">
             <div class="row">
-                <div class="col-12 col-md-7 izquierda-1">
+                <div class="col-12 col-md-7 izquierda-1" data-aos="flip-left" data-aos-duration="3000">
                     <h3 class="mt-3 text-center display-4 fw-bolder">¡Aprovecha hoy!</h3>
                     <h4 class="ms-5 mt-5 mb-5 fs-4 fw-bolder d-block">Pedi <span>sin cargo</span> tus TarjetasX<h4>
                     <img src="./img/tarjeta_seccion_2png.png" class="w-50 rounded mx-auto d-block img-fluid" alt="">
@@ -120,7 +120,7 @@
                 </div>
                 
             
-                <div class="col-12 col-md-5 derecha-1">
+                <div class="col-12 col-md-5 derecha-1" data-aos="flip-right" data-aos-duration="3000">
                     <h5 class="mt-3 mb-3 fs-6 fw-bolder text-center">Escanea el QR y obtenela desde tu celular</h5>
                     <img src="./img/codigo_qr.png" class="w-25 d-block mx-auto img-fluid" alt="">
                     <h6 class="mt-4 mb-5 fs-6 fw-bolder text-center">O completa los siguientes datos...</h6>
@@ -152,7 +152,7 @@
 
      
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000">
         <div class="contenedor-central">
 
             <div class="caja izquierda">
@@ -214,7 +214,10 @@
         </div>
     </footer>
     
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
