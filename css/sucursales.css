@@ -47,7 +47,7 @@ nav {
 
 nav ul {
     float: right;
-   
+   z-index: 1000;
 }
 
 nav ul li {
@@ -111,6 +111,7 @@ nav ul li a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1000;
     }
     nav ul li {
         display: block;
