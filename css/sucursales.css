@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #3a506b;
+    background-color: #000;
 }
 
 
@@ -164,6 +164,7 @@ nav ul li a:hover{
 .mapa iframe {
     width: 95%;
     height: 500px;
+    border: 5px solid #00c9bd;
 }
 
 .sucursales h3 {
@@ -177,6 +178,63 @@ nav ul li a:hover{
 .sucursales label {
     color: #fff;
 }
+
+.boton-buscar {
+    background-color: #00c9bd;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.boton-buscar:hover {
+        color: #fff;
+        background: #2c3e50;
+        transition: 0.5s;
+        border: 2px solid #00c9bd;
+}
+
+.seleccion select {
+    border: 2px solid #00c9bd;
+    background: #2c3e50;
+    color: #fff;
+}
+
+.seleccion select option {
+    color: #fff;
+}
+
+.centrado {
+    margin: auto;
+}
+
+.centrado input {
+    border: 2px solid #00c9bd;
+}
+
+.centrado input:checked {
+    background-color: #2c3e50;
+    border: 2px solid #00c9bd;
+}
+
+
+.ubicacion input {
+    border: 2px solid #00c9bd;
+}
+
+.ubicacion input:checked {
+    background-color: #2c3e50;
+    border: 2px solid #00c9bd;
+}
+
+
+/*MAIN RESPONSIVE*/
+@media (max-width: 767px) {
+    .boton-buscar {
+        margin-bottom: 25px;
+    }
+}
+
 
 
 /* FIN MAIN */
