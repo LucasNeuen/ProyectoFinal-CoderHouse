@@ -144,7 +144,7 @@ nav ul li a:hover{
     border-bottom: 3px solid #00c9bd;
 }
 
-.seccion-titulo h1 {
+h1 {
     color: #00c9bd;
     font-size: 3rem;
     text-align: center;
@@ -193,7 +193,7 @@ nav ul li a:hover{
     margin-top: 20px;
 }
 
-.descuento-descripcion h4 {
+.descuento-descripcion h2 {
     color: #00c9bd;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -238,7 +238,7 @@ nav ul li a:hover{
 }
 
 @media (max-width: 425px ) {
-    .seccion-titulo h1 {
+    h1 {
         font-size: 2rem;
     }
     .descuento-imagen img {

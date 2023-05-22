@@ -143,15 +143,14 @@ nav ul li a:hover{
     background-color: #000000;
 }
 
-.seccion-titulo h1 {
+h1 {
     color: #00c9bd;
     font-size: 3rem;
-    text-align: center;
     padding-bottom: 2rem;
     font-weight: 900;
     text-transform: uppercase;
     background-color: #000000;
-    display: block;
+    text-align: center;
 }
 
 
@@ -168,7 +167,7 @@ nav ul li a:hover{
     box-shadow: 0 0 50px 0 rgba(0, 201, 189, 0.3);
 }
 
-.seccion-formulario h3 {
+.seccion-formulario h2 {
     color: #ffffff;
 }
 
@@ -357,11 +356,11 @@ label input:focus {
             /* MAIN RESPONSIVE */
 
 @media (max-width: 965px) {
-    .seccion-titulo h1 {
+     h1 {
         font-size: 2rem;
     }
 
-    .seccion-formulario h3 {
+    .seccion-formulario h2 {
         color: #ffffff;
         font-size: 1.5rem;
     }
@@ -381,7 +380,7 @@ label input:focus {
         margin: 10px;
     }
 
-    .seccion-formulario h3 {
+    .seccion-formulario h2 {
         text-align: center;
     }
 
@@ -399,7 +398,7 @@ label input:focus {
 }
 
 @media (max-width: 325px) {
-    .seccion-formulario h3 {
+    .seccion-formulario h2 {
         text-align: center;
     }
     form {

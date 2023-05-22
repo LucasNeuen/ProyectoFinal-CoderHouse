@@ -197,15 +197,15 @@ nav ul li a:hover{
     background-color: #0b132b;
 }
 
-.izquierda-1 h3 {
+.izquierda-1 h1 {
     color: #00c9bd;
 }
 
-.izquierda-1 h4{
+.izquierda-1 h2{
     color: #fff;
 }
 
-.izquierda-1 h4 span {
+.izquierda-1 h2 span {
     color: #00c9bd;
 }
 
@@ -220,7 +220,7 @@ nav ul li a:hover{
     background: #0b132b;
 }
 
-.derecha-1 h5 {
+.derecha-1 h3 {
     color: #fff;
 }
 
@@ -229,7 +229,7 @@ nav ul li a:hover{
     border-radius: 15px;
 }
 
-.derecha-1 h6 {
+.derecha-1 h4 {
     color: #fff;
 }
 
