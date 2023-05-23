@@ -588,6 +588,16 @@ footer {
     
 }
 
+.autor {
+    display: block;
+    text-align: center;
+}
+
+
+.autor span a {
+    text-decoration: none;
+    color:#00c9bd;
+}
 /* FOOTER RESPONSIVE */
 
 @media (max-width: 965px) {
@@ -616,6 +626,9 @@ footer {
         }
     .central .contenedor-1 .texto {
         font-size: 13px;
+    }
+    .autor span {
+        font-size: .75rem;
     }
 }
 
