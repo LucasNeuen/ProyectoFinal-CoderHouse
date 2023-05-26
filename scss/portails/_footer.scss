@@ -1,0 +1,182 @@
+@import "colores";
+
+/* --- FOOTER ---*/
+
+footer {
+	width: 100%;
+	color: $blanco;
+	background-color: $negro;
+}
+.contenedor-central {
+	display: flex;
+	background-color: $negro;
+	.caja {
+		flex-basis: 50%;
+		padding: 10px 20px;
+	}
+}
+.caja {
+	h2 {
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.contenedor-1 {
+		margin: 20px 0 0 0;
+	}
+}
+.izquierda {
+	.contenedor-1 {
+		p {
+			text-align: justify;
+		}
+		.social {
+			margin: 20px 0 0 0;
+			a {
+				padding: 0 2px;
+				color: $blanco;
+				span {
+					height: 40px;
+					width: 40px;
+					background: #1a1a1a;
+					line-height: 40px;
+					text-align: center;
+					font-size: 18px;
+					border-radius: 5px;
+					transition: .3s;
+					&:hover {
+						background: $verde;
+					}
+				}
+			}
+		}
+	}
+}
+.central {
+	.contenedor-1 {
+		.fas {
+			font-size: 23px;
+			background: #1a1a1a;
+			height: 45px;
+			width: 45px;
+			line-height: 45px;
+			text-align: center;
+			border-radius: 50%;
+			transition: .3s;
+			&:hover {
+				background: $verde;
+			}
+		}
+		.texto {
+			font-size: 17px;
+			font-weight: 500;
+			padding-left: 10px;
+		}
+		.telefono {
+			margin: 10px 0;
+		}
+	}
+}
+.derecha {
+	form {
+		.texto {
+			font-size: 17px;
+			margin-bottom: 3px;
+			color: $marron;
+		}
+		.mensaje {
+			margin-top: 12px;
+		}
+		input {
+			width: 100%;
+			font-size: 17px;
+			background: #151515;
+			padding-left: 12px;
+			border: 1px solid $verde;
+			color: $blanco;
+			height: 35px;
+			&:focus {
+				outline-color: $verde;
+			}
+		}
+		textarea {
+			width: 100%;
+			font-size: 17px;
+			background: #151515;
+			padding-left: 12px;
+			border: 1px solid $verde;
+			color: $blanco;
+			&:focus {
+				outline-color: $verde;
+			}
+		}
+		.boton {
+			margin-top: 12px;
+			button {
+				height: 40px;
+				width: 100%;
+				border: none;
+				font-size: 17px;
+				font-weight: 500;
+				cursor: pointer;
+				background: $negro;
+				color: $blanco;
+				transition: 1.5s;
+				border: 1px solid $verde;
+				&:hover {
+					background: $verde;
+					color: $blanco;
+				}
+			}
+		}
+	}
+}
+.autor {
+	display: block;
+	text-align: center;
+	span {
+		a {
+			text-decoration: none;
+			color: $verde;
+		}
+	}
+}
+
+@media (max-width: 965px) {
+	.contenedor-central {
+		display: block;
+	}
+	.caja {
+		h2 {
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+	.social {
+		text-align: center;
+		a {
+			margin-right: 25px;
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 335px) {
+	.social {
+		a {
+			margin-right: 5px;
+			text-align: center;
+		}
+	}
+	.central {
+		.contenedor-1 {
+			.texto {
+				font-size: 13px;
+			}
+		}
+	}
+	.autor {
+		span {
+			font-size: .75rem;
+		}
+	}
+}
