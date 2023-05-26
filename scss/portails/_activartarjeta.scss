@@ -1,0 +1,288 @@
+@import "colores";
+
+/* --- ACTIVAR TARJETA --- */
+
+.main-2 {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3rem 1.5em;
+	background-color: $negro;
+	h1 {
+		max-width: 1100px;
+		color: $verde;
+		font-size: 3rem;
+		margin: auto;
+		padding-bottom: 2rem;
+		font-weight: 900;
+		text-transform: uppercase;
+		background-color: $negro;
+		text-align: center;
+	}
+	p {
+		color: $blanco;
+		max-width: 1100px;
+		text-align: justify;
+		margin: auto;
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+		span {
+			font-weight: bolder;
+			color: $verde;
+			text-transform: uppercase;
+			font-size: 1.7rem;
+		}
+		a {
+			color: $verde;
+			text-decoration: none;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.7rem;
+		}
+	}
+}
+.seccion-formulario {
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	background: #3a506b;
+	background: linear-gradient(-45deg, #3a506b, #6492bd, #010103);
+	box-shadow: 0 0 50px 0 rgba(0, 201, 189, 0.3);
+	h2 {
+		color: $blanco;
+	}
+	.google-boton {
+		span {
+			color: $blanco;
+		}
+	}
+}
+.botones {
+	margin: auto;
+	align-self: flex-start;
+	display: flex;
+	gap: 20px;
+}
+.google-boton {
+	display: flex;
+	background-color: $verde;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	align-items: center;
+	padding: 2px;
+	cursor: pointer;
+	&:hover {
+		background: $gris;
+		color: $blanco;
+		border: 3px solid $verde;
+	}
+	picture {
+		width: 35px;
+		height: 35px;
+		background-color: $blanco;
+		border-radius: 2px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		img {
+			width: 75%;
+		}
+	}
+	span {
+		color: $blanco;
+		padding: 15px;
+		font-weight: 500;
+	}
+}
+.boton-twitter {
+	display: flex;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	align-items: center;
+	padding: 4px;
+	cursor: pointer;
+	background-color: $verde;
+	color: $blanco;
+	&:hover {
+		background: $gris;
+		color: $blanco;
+		border: 3px solid $verde;
+	}
+	picture {
+		width: 35px;
+		height: 35px;
+		display: flex;
+		align-items: center;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 10px;
+		}
+	}
+	span {
+		padding: 15px;
+		font-weight: 500;
+		color: $blanco;
+	}
+}
+.separador {
+	display: flex;
+	width: 100%;
+	gap: 15px;
+	hr {
+		flex-grow: 1;
+		border: none;
+		border-top: 1px solid $verde;
+	}
+	span {
+		color: $blanco;
+	}
+}
+.form-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+.seccion-input {
+	display: flex;
+	gap: 25px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 15px;
+	span {
+		font-weight: 700;
+		color: $blanco;
+	}
+	input {
+		background-color: #212121;
+		color: $blanco;
+		border: 1px solid $verde;
+		padding: 15px 20px;
+		border-radius: 15px;
+		outline: none;
+		font-size: 14pt;
+		transition: 0.2s;
+		&:hover {
+			background-color: #454045;
+			border: solid 2px $verde;
+			box-shadow: 0 0 5px $verde;
+		}
+		&:focus {
+			background-color: $blanco;
+			border: solid 2px #f3f3f4;
+			box-shadow: 0 0 20px 0 rgba(0, 201, 189, 0.3);
+			color: $negro;
+		}
+	}
+}
+.checkbox-label {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	input[type="checkbox"] {
+		width: 25px;
+	}
+	span {
+		font-weight: 400;
+	}
+}
+.submit-boton {
+	color: $blanco;
+	background-color: $verde;
+	text-align: center;
+	padding: 15px;
+	border: none;
+	border-radius: 15px;
+	font-weight: 500;
+	font-size: 15pt;
+	cursor: pointer;
+	&:hover {
+		background: $gris;
+		color: $blanco;
+		border: 3px solid $verde;
+	}
+}
+
+@media (max-width: 965px) {
+	.main-2 {
+		h1 {
+			font-size: 2rem;
+		}
+	}
+	.seccion-formulario {
+		h2 {
+			color: $blanco;
+			font-size: 1.5rem;
+		}
+	}
+	.google-boton {
+		height: 60px;
+	}
+	.boton-twitter {
+		height: 60px;
+	}
+}
+@media (max-width: 620px) {
+	.main-2 {
+		h1 {
+			font-size: 1.7rem;
+		}
+		p {
+			text-align: center;
+			font-size: 1rem;
+			span {
+				font-size: 1rem;
+			}
+			a {
+				font-size: 1rem;
+			}
+		}
+	}
+	.botones {
+		display: block;
+	}
+	.google-boton {
+		margin: 10px;
+	}
+	.boton-twitter {
+		margin: 10px;
+	}
+	.seccion-formulario {
+		h2 {
+			text-align: center;
+		}
+	}
+	.seccion-input {
+		display: block;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	form {
+		margin: 5px;
+		width: 90%;
+	}
+}
+@media (max-width: 325px) {
+	.seccion-formulario {
+		h2 {
+			text-align: center;
+		}
+	}
+	form {
+		width: 100%;
+		margin: 5px;
+	}
+}

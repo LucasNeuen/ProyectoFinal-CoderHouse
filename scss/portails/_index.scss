@@ -1,0 +1,97 @@
+@import "colores";
+
+
+/* --- INDEX --- */
+.main-1 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: $negro;
+}
+.seccion-1 {
+    display: block;
+    width: 100%;
+    background-color: $negro;
+}
+.d-item {
+    height: 680px;
+}
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9) ;
+}
+.title-1 {
+    color: $amarillo;
+    text-shadow: 1px 3px $bordo;
+}
+
+.title-2 {
+    color: $negro;
+    text-shadow: 1px 3px $blanco;
+}
+
+.title-3 {
+    text-shadow: 1px 3px $amarillo;
+}
+
+.title-4 {
+    color: $blanco;
+    text-shadow: 1px 3px $negro;
+}
+.btn {
+    margin-top: 380px;
+    background: $verde;
+    &:hover {
+        background: $gris;
+        color: $blanco;
+        border: 3px solid $verde;
+    }
+}
+.seccion-2 {
+    display: block;
+    width: 100%;
+    background-color: $negro;
+}
+
+.izquierda-1 {
+    background-color: $azul;
+    h1 {
+        color: $verde;
+    }
+    h2 {
+        color: $blanco;
+        span {
+            color: $verde;
+        }
+    }
+}
+.lista-s2 {
+    ol {
+        li {
+            background: $negro;
+            color: $blanco;
+            border: 2px solid $verde;   
+        }
+    }
+}
+.derecha-1 {
+    background: $azul;
+    h3 {
+        color: $blanco;
+    }
+    h4 {
+        color: $blanco;
+    }
+    img {
+        border: 5px solid $verde;
+        border-radius: 15px;
+    }
+}
+.btn-1 {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+

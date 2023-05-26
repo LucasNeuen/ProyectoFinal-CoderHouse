@@ -1,0 +1,88 @@
+@import "colores";
+
+/* --- SUCURSALES --- */
+
+.main-5 {
+	background-color: $negro;
+	width: 100%;
+	display: block;
+}
+.seccion-sucursales-1 {
+	position: relative;
+	background-image: url(../img/banco.jpg);
+	height: 525px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+}
+.seccion-sucursales-2 {
+	display: block;
+	width: 100%;
+	h1 {
+		color: $verde;
+	}
+}
+.mapa {
+	iframe {
+		width: 95%;
+		height: 500px;
+		border: 5px solid $verde;
+	}
+}
+.sucursales {
+	h2 {
+		color: $verde;
+	}
+	h4 {
+		color: $verde;
+	}
+	label {
+		color: $blanco;
+	}
+}
+.boton-buscar {
+	background-color: $verde;
+	text-align: center;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+	&:hover {
+		color: $blanco;
+		background: $gris;
+		border: 3px solid $verde;
+	}
+}
+.seleccion {
+	select {
+		border: 2px solid $verde;
+		background: $gris;
+		color: $blanco;
+		option {
+			color: $blanco;
+		}
+	}
+}
+.centrado {
+	margin: auto;
+	input {
+		border: 2px solid $verde;
+		&:checked {
+			background-color: $azul;
+			border: 2px solid $verde;
+		}
+	}
+}
+.ubicacion {
+	input {
+		border: 2px solid $verde;
+		&:checked {
+			background-color: $azul;
+			border: 2px solid $verde;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.boton-buscar {
+		margin-bottom: 25px;
+	}
+}
