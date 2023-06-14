@@ -17,12 +17,16 @@
 }
 .seccion-sucursales-2 {
 	display: block;
-	width: 100%;
+	max-width: 100%;
+	.centrado-general {
+		margin: auto;
+	}
 	h1 {
 		color: $verde;
 	}
 }
 .mapa {
+	padding: 0;
 	iframe {
 		width: 95%;
 		height: 500px;
@@ -30,6 +34,7 @@
 	}
 }
 .sucursales {
+	padding: 0;
 	h2 {
 		color: $verde;
 	}

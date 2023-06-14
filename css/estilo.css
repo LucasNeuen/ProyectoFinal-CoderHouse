@@ -104,7 +104,7 @@ footer {
     flex-basis: 50%;
     padding: 10px 20px; }
 
-.caja h2 {
+.caja .referencias {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -821,23 +821,27 @@ label {
 
 .seccion-sucursales-2 {
   display: block;
-  width: 100%; }
+  max-width: 100%; }
+  .seccion-sucursales-2 .centrado-general {
+    margin: auto; }
   .seccion-sucursales-2 h1 {
     color: #00c9bd; }
 
-.mapa iframe {
-  width: 95%;
-  height: 500px;
-  border: 5px solid #00c9bd; }
+.mapa {
+  padding: 0; }
+  .mapa iframe {
+    width: 95%;
+    height: 500px;
+    border: 5px solid #00c9bd; }
 
-.sucursales h2 {
-  color: #00c9bd; }
-
-.sucursales h4 {
-  color: #00c9bd; }
-
-.sucursales label {
-  color: #fff; }
+.sucursales {
+  padding: 0; }
+  .sucursales h2 {
+    color: #00c9bd; }
+  .sucursales h4 {
+    color: #00c9bd; }
+  .sucursales label {
+    color: #fff; }
 
 .boton-buscar {
   background-color: #00c9bd;
