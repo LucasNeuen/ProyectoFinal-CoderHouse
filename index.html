@@ -13,6 +13,8 @@
     <!--ESTILO PROPIO-->
     <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>TarjetaX | Pedí tu tarjeta</title>
 </head>
 
@@ -119,28 +121,34 @@
                 </div>
                 
             
-                <div class="col-12 col-md-5 derecha-1" data-aos="flip-right" data-aos-duration="3000">
+                <div class="col-12 col-md-5 derecha-1" data-aos="flip-right" data-aos-duration="3000" id="app">
                     <h3 class="mt-5 mb-3 fs-6 fw-bolder text-center">Escanea el código QR y obtenla desde tu celular</h3>
                     <img src="./img/codigo_qr.png" class="w-25 d-block mx-auto img-fluid" alt="codigo QR para facilitar operación">
                     <h4 class="mt-4 mb-5 fs-6 fw-bolder text-center">O completa los siguientes datos...</h4>
-                    <div class="form-floating mx-auto w-75">
-                        <input type="email" class="form-control mb-3" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating w-75 mx-auto">
-                        <input type="number" class="form-control" id="floatingPassword" placeholder="DNI">
-                        <label for="floatingPassword">DNI</label>
-                    </div>
-                    <div class="form-floating w-75 mx-auto">
-                        <select class="form-select mt-3" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>Masculino</option>
-                          <option value="1">Femenino</option>
-                          <option value="2">Otro</option>
-                        </select>
-                        <label for="floatingSelect">Seleccione su genero</label>
-                    </div>
-                    <div class="d-grid gap-2 d-md-block text-center w-25 mx-auto">
-                        <button class="btn  btn-primary btn-1 mb-5 w-100" type="button">Pedir</button>
+                    <div class="contenedor-login">
+                        <div class="form-floating mx-auto w-75">
+                            <input type="email" class="nombreApellido form-control mb-3" id="floatingInput" placeholder="name@example.com" name="nombreApellido" required>
+                            <label for="floatingInput">Nombre y Apellido</label>
+                        </div>
+                        <div class="form-floating w-75 mx-auto">
+                            <input type="number" class="dni form-control" id="floatingPassword" placeholder="DNI" name="documento" required>
+                            <label for="floatingInput">DNI</label>
+                        </div>
+                        <div class="form-floating w-75 mx-auto">
+                            <input type="number" class="edad form-control mt-3" id="floatingPassword" placeholder="Edad" name="años" required>
+                            <label for="floatingInput">Edad</label>
+                        </div>
+                        <div class="form-floating w-75 mx-auto">
+                            <select class="form-select mt-3" id="floatingSelect" aria-label="Floating label select example">
+                            <option selected>Masculino</option>
+                            <option value="1">Femenino</option>
+                            <option value="2">Otro</option>
+                            </select>
+                            <label for="floatingSelect">Seleccione su genero</label>
+                        </div>
+                        <div class="d-grid gap-2 d-md-block text-center w-25 mx-auto">
+                            <button class="btn  btn-primary btn-1 mb-5 w-100" type="submit" id="botonLogin">Pedir</button>
+                        </div>
                     </div>
                 </div>
 
@@ -210,5 +218,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
 </html>

@@ -68,36 +68,41 @@
                 <hr>
             </div>
 
-            <form class="form-2" action="">
+            <form class="form-2" action="" id="registro">
                 <div class="seccion-input">
                     <label for="name">
                         <span>Apellido y Nombre</span>
-                        <input type="text">
+                        <input type="text" id="nombreCompleto">
                     </label>
                     <label for="username">
                         <span>Usuario</span>
-                        <input type="text">
+                        <input type="text" id="nombreUsuario">
                     </label>
                 </div>
                 
                     <label for="email">
                         <span>Email</span>
-                        <input type="email" required>
+                        <input type="email" id="email" required>
                     </label>
 
                     <label for="password">
                         <span>Contraseña</span>
-                        <input type="password" placeholder="6+ caracteres">
+                        <input type="password" placeholder="6+ caracteres" id="contraseña">
                     </label>
 
                     <label for="checkbox" class="checkbox-label">
-                        <input type="checkbox" id="checkbox">
+                        <input type="checkbox" id="checkbox" required>
                         <span>Acepto términos y condiciones de privacidad</span>
                     </label>
 
                     <input type="submit" value="Crear cuenta" class="submit-boton">
             
             </form>
+
+            <div id="app">
+                
+            </div>
+
         </section>
     </main>
     <!--FOOTER - PIE PAGINA-->
@@ -163,5 +168,6 @@
     <!--ESTILOS JAVASCRIPT-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+    <!-- <script src="../index.js"></script> -->
 </body>
 </html>
