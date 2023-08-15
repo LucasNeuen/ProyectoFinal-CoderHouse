@@ -1,6 +1,23 @@
 
-// --- INDEX "Pedir Tarjeta" ---
+// --- INDEX ---
 
+const contenedorInfo = document.getElementById('contenedor-Info');
+const botonCerrar = document.getElementById('cerrar');
+const botonesInfo = document.querySelectorAll('.carousel-caption button');
+
+        botonesInfo.forEach(button => {
+            button.addEventListener('click', () => {
+                contenedorInfo.style.display = 'flex';
+            });
+        });
+
+        botonCerrar.addEventListener('click', () => {
+            contenedorInfo.style.display = 'none';
+        });
+
+
+
+// seccion 2
 const bbdd = [{
     nombreYApellido: 'Lucas Garay',
     dni: 12345,
@@ -16,15 +33,21 @@ const usuario = {
 const clienteRegistrado = JSON.parse(localStorage.getItem("cliente")); 
 
 const botonLogin = document.getElementById("botonLogin");
-const app = document.getElementById("app");
+const pedir = document.getElementById("pedir");
 const inputs = document.querySelectorAll("input");
 
 const bienvenidoUsuario = nombre => {
-    app.innerHTML = `<h1 class:'title'>Bienvenido Sr/Sra ${nombre}</h1>`
+    pedir.innerHTML = `<h1 class:'title'>Bienvenido Sr/Sra ${nombre}</h1>
+                         <p class:'parrafo'>Usted es un cliente que ahora se encuentra registrado en nuestro sistema. De esta manera podra "activar" su TarjetaX para poder acceder a sus beneficios. Le agradecemos su confianza.</p>`;
+}
+
+const usuarioNoEncontrado = (nombre) => {
+    pedir.innerHTML = `<h1 class:'title'>Lo siento Sr/Sra ${nombre}</h1>
+                        <p class:'parrafo'>Usted no se ecuentra registrado en nuestra base de datos.</p>`
 }
 
 if(clienteRegistrado != undefined){
-    bienvenidoUsuario(clienteRegistrado.nombreYApellido)
+    bienvenidoUsuario(clienteRegistrado.nombreYApellido);
 }
 
 botonLogin.addEventListener("click", (event) => {
@@ -35,7 +58,7 @@ botonLogin.addEventListener("click", (event) => {
     bienvenidoUsuario(buscarUsuario.nombreYApellido)
     localStorage.setItem("cliente", JSON.stringify(buscarUsuario))
    }else {
-    console.log("Usuario no encontrado")
+    usuarioNoEncontrado(usuario.nombreYApellido);
    }
     
 });
