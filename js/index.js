@@ -37,11 +37,11 @@ botonRegistro.addEventListener('click', (e) => {
     localStorage.setItem('users', JSON.stringify(usuarios))
     const bienvenidoUsuario = (nombre) => {
         bienvenida.innerHTML = `
-        <div class='title'>
-                                <h1>Bienvenido Sr/Sra ${nombre}</h1>
+                                <div class='title'>
+                                    <h1>Bienvenido Sr/Sra ${nombre}</h1>
         
-                             <p class='parrafo'>Usted es un cliente que ahora se encuentra registrado en nuestro sistema. De esta manera podra pedir su TarjetaX y ademas podras acceder a sus beneficios a traves de la activacion de la misma. Le agradecemos su confianza.</p>
-                             </div>`;
+                                    <p class='parrafo'>Usted es un cliente que ahora se encuentra registrado en nuestro sistema. De esta manera podra pedir su TarjetaX y ademas podras acceder a sus beneficios a traves de la activacion de la misma. Le agradecemos su confianza.</p>
+                                </div>`;
                     
                             }
         bienvenidoUsuario(name)
@@ -82,6 +82,10 @@ const confirmacion = document.getElementById("confirmar");
         document.querySelector('.email_1').value = '';
         document.querySelector('.contraseña_1').value = '';
 
+        const mensajeError = document.querySelector('.mensajeIncorrecto');
+        if (mensajeError) {
+        mensajeError.remove(); 
+    }
     })
 
 
@@ -94,7 +98,13 @@ confirmacion.addEventListener('click', (e) => {
     const validarUsuario = usuarios.find(user => user.email === email && user.password === password);
 
     if (!validarUsuario) {
-        alert('Usuario y/o contraseña incorrecto')
+        const datosIncorrectos = document.createElement('p');
+        datosIncorrectos.textContent = 'Lo siento, el email que ingresaste y/o contraseña no se encuentra en nuesta base de datos.';
+        datosIncorrectos.classList.add('mensajeIncorrecto')
+
+        confirmacion.insertAdjacentElement('afterend', datosIncorrectos);
+        return;
+        
     }
     
     const felicitacionesUsuario = (nombre) => {
