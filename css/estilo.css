@@ -304,7 +304,7 @@ footer {
   margin-left: 10px; }
 
 /* --- ACTIVAR TARJETA --- */
-.main-2 {
+/* .main-2 {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -534,10 +534,10 @@ label {
     text-align: center; }
   form {
     width: 100%;
-    margin: 5px; } }
+    margin: 5px; } } */
 
 /* ---PROMOCIONES ---*/
-.main-3 {
+/* .main-3 {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -705,10 +705,10 @@ label {
       .seccion-promocion-1 p span {
         font-size: 1rem; }
       .seccion-promocion-1 p a {
-        font-size: 1rem; } }
+        font-size: 1rem; } } */
 
 /* --- DESCUENTOS --- */
-.main-4 {
+/* .main-4 {
   display: block;
   width: 100%;
   margin-left: auto;
@@ -803,10 +803,10 @@ label {
     display: block; }
   .descuentos {
     width: 100%;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; } } */
 
 /* --- SUCURSALES --- */
-.main-5 {
+/* .main-5 {
   background-color: #000;
   width: 100%;
   display: block; }
@@ -878,3 +878,4 @@ label {
 @media (max-width: 767px) {
   .boton-buscar {
     margin-bottom: 25px; } }
+ */

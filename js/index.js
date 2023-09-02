@@ -51,12 +51,14 @@ const confirmacion = document.getElementById("confirmar");
 
 confirmacion.addEventListener('click', () => {
     
+    
     const email = document.querySelector('.email_1').value;
     const password = document.querySelector('.contraseña_1').value;
     const mensajeError = document.querySelector('.mensajeIncorrecto_1');
 
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     const validarUsuario = usuarios.find(user => user.email === email && user.password === password);
+   
 
     if (!validarUsuario) {
         
@@ -68,12 +70,12 @@ confirmacion.addEventListener('click', () => {
         contenedorFormulario.innerHTML = `
                                             <div class="contenedorParrafo-1">
                                                 
-                                                <h1>Felicitaciones Sr/Sra ${nombre}</h1>
+                                                <h1>Felicitaciones</h1>
                                                 <p class='parrafo'>Usted es un cliente que ahora ha pedido su tarjeta de DEBITO de TarjetaX. De esta manera podra acceder ahora a los beneficios de TarjetaX a traves de la activacion de la misma. Le agradecemos su confianza.</p>
     
                                             </div>`;
                     
                             }
-        felicitacionesUsuario(validarUsuario.name)
+        felicitacionesUsuario()
     
 })
