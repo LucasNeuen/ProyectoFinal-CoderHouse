@@ -1,30 +1,31 @@
-const contacto = document.querySelector('#btnConsulta');
+const btn = document.querySelector('#btnConsulta');
 
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
 
-contacto.addEventListener('click', (e) => {
-    e.preventDefault()
-    
     const emailConsulta = document.querySelector('#emailConsulta').value;
     const textoConsulta = document.querySelector('#textoConsulta').value;
-    const error = document.querySelector('.error');
     const consultaEnviada = document.querySelector('#consultaEnviada');
 
-    if (!emailConsulta || !textoConsulta) {
-        error.style.display = 'block';
-        consultaEnviada.style.display= 'none';
+   event.preventDefault();
+
+   btn.textContent = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_f727q8p';
+
+   const consultas = JSON.parse(localStorage.getItem('consultas')) || [];
+
+   consultas.push({email: emailConsulta, consulta: textoConsulta});
+
+   localStorage.setItem('consultas', JSON.stringify(consultas))
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+        consultaEnviada.style.display = 'block';
+        btn.textContent = 'Enviar';
+        document.querySelector('#emailConsulta').value = '';
+        document.querySelector('#textoConsulta').value = '';
         return
-    }
-
-    const consultas = JSON.parse(localStorage.getItem('consultas')) || [];
-
-    consultas.push({email: emailConsulta, consulta: textoConsulta});
-
-    localStorage.setItem('consultas', JSON.stringify(consultas))
-
-    consultaEnviada.style.display = 'block';
-    error.style.display = 'none';
-    
-    document.querySelector('#emailConsulta').value = '';
-    document.querySelector('#textoConsulta').value = '';
-    
-})
+    });
+});
