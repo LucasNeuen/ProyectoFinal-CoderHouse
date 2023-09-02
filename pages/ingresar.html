@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Si queres encontrarnos no vas a tener problemas en ubicarnos ya que nuestras sucursales se encuentran en todo el país. Si queres llegarte a nuestras casas centrales lo podés hacer en el siguiente mapa donde encontraras todas nuestras sucursales en todas las provincias argentinas. Además, también podés encontrar los cajeros red link en donde podrás retirar dinero en efectivo como así también los puntos de TarjetaX. Otra manera más fácil de poder encontrarnos es activando tu ubicación del celular y así automáticamente te llevara a nuestra casa mas cercana.">
+    <meta name="keywords" content="encontrar, ubicarnos, sucursales, país, casa, central, provincias, tarjetax, cajero, red link, dinero, efectivo, puntos, ubicación, celular, cercana">
+    <!--ESTILOS AGREGADOS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--ESTILO PROPIO-->
+    <link rel="shortcut icon" href="../img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/styleJavaScript.css">
+    <title>TarjetaX | Ingresar</title>
+</head>
+
+<body>
+    <!--HEADER - ENCABEZADO-->
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="botoncheck">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="logo" href="../index.html">TarjetaX</a>
+            <ul>
+                <li>
+                    <a href="./ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--MAIN - SECCIONES-->
+    <section class="seccion-nueva">
+        <div class="container-form sign-up">
+            <div class="welcome-back">
+                <div class="message">
+                    <h2>Bienvenido a TarjetaX</h2>
+                    <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                    <button class="sign-up-btn">Iniciar Sesion</button> <!-- cambio panorama tomado-->
+                </div>
+            </div>
+
+            <form class="formulario formularioRegistro">
+                <h2 class="create-account">Crear una cuenta</h2>
+                <p class="cuenta-gratis">Ingrese los siguientes datos</p>
+                <!-- tomar estos datos -->
+                <input class="nombreApellido" type="text" placeholder="Nombre y Apellido">
+                <input class="email" type="email" placeholder="Email">
+                <input class="contraseña" type="password" placeholder="Contraseña">
+                <input type="submit" value="Registrarse">
+                <div class="mensajeIncorrecto">
+                    <p>Lo siento, debes completar todos los datos.</p>
+                </div>
+                <div class="error">
+                    <p>Lo siento, el email que ingresaste ya esta en uso.</p>
+                </div>
+            </form>
+        </div>
+
+        <div id="contenedorFormulario" class="container-form sign-in">
+            <form class="formulario formularioSesion">
+                <h2 class="create-account">Iniciar Sesion</h2>
+                <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+                <!-- tomar estos datos  -->
+                <input class="email_1" type="email" placeholder="Email">
+                <input class="contraseña_1" type="password" placeholder="Contraseña">
+                <input type="submit" value="Iniciar Sesion">
+                <div class="mensajeIncorrecto_1">
+                    <p>Lo siento, el email que ingresaste y/o contraseña no se encuentra en nuesta base de datos.</p>
+                </div>
+            </form>
+            
+            <div class="welcome-back">
+                <div class="message">
+                    <h2>Bienvenido de nuevo</h2>
+                    <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                    <button class="sign-in-btn">Registrarse</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <!--FOOTER - PIE PAGINA-->
+    <footer class="footer">
+        <div class="contenedor-central">
+
+            <div class="caja izquierda">
+                <p class="referencias">Sobre nosotros</p>
+                <div class="contenedor-1">
+                    <p>Busco incorporarme a esta industria tecnológica que me gusta, con el objetivo de ayudar a las empresas informáticas a través de mis conocimientos. Me gustan los retos porque me considero una persona proactiva y dinámica. Por otro lado, me gusta mucho trabajar en equipo y ser parte de la solución.</p>
+                    <div class="social">
+                        <a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
+                        <a href="https://www.facebook.com/" target="_blank"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://www.twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><span class="fab fa-linkedin"></span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja central">
+                <p class="referencias">Dirección</p>
+                <div class="contenedor-1">
+                    <div class="lugar">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="texto">Rio Segundo - Córdoba</span>
+                    </div>
+                    <div class="telefono">
+                        <span class="fas fa-phone-square-alt"></span>
+                        <span class="texto">+59-3572-551576</span>
+                    </div>
+                    <div class="e-mail">
+                        <span class="fas fa-envelope-open"></span>
+                        <span class="texto">lucas.neuen95@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caja derecha">
+                <p class="referencias">Contáctanos</p>
+                <div class="contenedor-1">
+                    <form action="#">
+                        <div class="email">
+                            <div  class="texto">Email *</div>
+                            <input id="emailConsulta" type="email">
+                        </div>
+                        <div class="mensaje">
+                            <div class="texto">Mensaje *</div>
+                            <textarea id="textoConsulta"  cols="25" rows="2"></textarea>
+                        </div>
+                        <div class="boton">
+                            <button id="btnConsulta">Enviar</button>
+                        </div>
+                        <div class="error">
+                            <p>Lo siento, debes completar el formulario.</p>
+                        </div>
+                        <div id="consultaEnviada" >
+                            <p>Su consulta ha sido enviada con exito.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="autor">
+                <span>Creado por <a href="https://www.linkedin.com/in/lucas-neuen-garay-48357b224/" target="_blank">GARAY Lucas Neuen</a> |</span>
+                <span class="far fa-copyright">2023 Todos los derechos reservados.</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../js/ingresar.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

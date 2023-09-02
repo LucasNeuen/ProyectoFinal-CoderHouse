@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../css/submenu.css">
+    
+    <title>TarjetaX | Submenu</title>
+</head>
+<body>
+    <header>
+        <nav class="barraNavegacion">
+           <input type="checkbox" id="check">
+            <label for="check" class="botoncheck">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a class="logo" href="../index.html">TarjetaX</a>
+            <ul class="listaPages">
+                <li>
+                    <a href="./submenu.html">Ingresar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="seccionLateral">
+        <div class="btnX">
+            <span class="fas fa-bars"></span>
+        </div>   
+        <nav class="barraLateral">
+            <div class="text">
+               Hola 
+            </div>
+            <ul> 
+                <li>
+                    <button id="btnPromocion">Promociones</button>
+                </li>
+                <li>
+                    <button id="btnDescuento">Descuentos</button>
+                </li>
+                <hr>
+                <hr>
+<!--                 <li>
+                    <button id="btnBeneficio" >Ver beneficios</button>
+                </li> -->
+                <li>
+                    <button id="cerrarSesion">Cerrar sesion</button>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <main class="main-0"></main> <!-- usuario -->
+    
+    <main id="promociones" class="main-3">
+            <section class="seccion-promocion-1">
+                <h1 data-aos="zoom-in" data-aos-duration="1000">Nuestras promociones</h1>
+                <p data-aos="zoom-in" data-aos-duration="2000">¡Te presentamos nuestras promociones de <span>tarjetaX</span>! Ya podes ser parte de ellas, solo tenes que participar de las mismas para poder obtenerlas.</p>
+            </section>
+
+            <section class="seccion-grid">
+                <div class="grid-promocion grid-promocion1" data-promo-id="Viaje Cancun" data-aos="zoom-in" data-aos-duration="3000">
+                    <h2 data-aos="fade-down">Promo 1</h2>
+                    <h3>Viaje a Cancun</h3>
+                    <button id="boton1" class="grid-boton">Participar</button>
+                </div>
+                <div class="grid-promocion grid-promocion2" data-promo-id="Sorteo Auto 0KM" data-aos="zoom-in" data-aos-duration="3000">
+                    <h2 data-aos="fade-right">Promo 2</h2>
+                    <h3>Auto 0KM</h3>
+                    <button id="boton2" class="grid-boton">Participar</button>
+                </div>
+                <div class="grid-promocion grid-promocion3" data-promo-id="Viaje Cataratas" data-aos="zoom-in" data-aos-duration="3000">
+                    <h2 data-aos="fade-left">Promo 3</h2>
+                    <h3>Tour Cataratas</h3>
+                    <button id="boton3" class="grid-boton">Participar</button>
+                </div>
+            </section>
+    </main>
+
+    <main id="descuentos" class="main-2">
+            <h1 data-aos="zoom-in" data-aos-duration="2000">Descuentos</h1>
+            <p data-aos="zoom-in" data-aos-duration="2000">Estos son los descuentos de <span>TarjetaX</span>. Ahora que sos parte de nuestra familia podes solicitar cualquiera de estos descuentos solamente haciendo click en el boton de "obtener".</a></p>
+    
+            <section class="seccion-descuentos" data-aos="fade-right" data-aos-duration="2000">
+                <div class="descuentos" data-descuentos-id="Descuento Super">
+                    <div>
+                        <img class="descuento-imagen" src="../img/supermercado.jpg" alt="imagen super">
+                    </div>
+                    <div class="descuento-descripcion descuento-descripcion-1">
+                        <h2>Súper</h2>
+                        <p>Obtén los descuentos en los súper adheridos.</p>
+                        <button id="descuentoBtn1" class="descuento-boton">Obtener</button>
+                    </div>
+                </div>
+                <div class="descuentos" data-descuentos-id="Descuento Hoteles" data-aos="zoom-out" data-aos-duration="2000">
+                    <div>
+                        <img class="descuento-imagen" src="../img/hotel.jpg" alt="imagen hotel">
+                    </div>
+                    <div class="descuento-descripcion descuento-descripcion-2">
+                        <h2>Hoteles</h2>
+                        <p>Obtén los descuentos en los hoteles adheridos.</p>
+                        <button id="descuentoBtn2" class="descuento-boton">Obtener</button>
+                    </div>
+                </div>
+                <div class="descuentos" data-descuentos-id="Descuento Tiendas" data-aos="zoom-out" data-aos-duration="2000">
+                    <div>
+                        <img class="descuento-imagen" src="../img/tiendas.jpg" alt="imagen tiendas">
+                    </div>
+                    <div class="descuento-descripcion descuento-descripcion-3">
+                        <h2>Tiendas</h2>
+                        <p>Obtén los descuentos en las tiendas adheridas.</p>
+                        <button id="descuentoBtn3" class="descuento-boton">Obtener</button>
+                    </div>
+                </div>
+                <div class="descuentos" data-descuentos-id="Descuento Shopping" data-aos="fade-right" data-aos-duration="2000">
+                    <div>
+                        <img class="descuento-imagen" src="../img/shopping.jpg" alt="imagen shopping">
+                    </div>
+                    <div class="descuento-descripcion descuento-descripcion-4">
+                        <h2>Shopping</h2>
+                        <p>Obtén los descuentos en los shopping adheridos.</p>
+                        <button id="descuentoBtn4" class="descuento-boton">Obtener</button>
+                    </div>
+                </div>
+    
+    </main>
+
+    <main id="beneficios" class="main-5">
+        <section>
+            <h2>Promociones en las que has participado:</h2>
+            <ul id="promos-participadas">
+                
+            </ul>
+        </section>
+    </main>
+
+
+     <script src="../js/submenu.js"></script>
+     <script src="../js/promociones.js"></script>
+</body>
+</html>

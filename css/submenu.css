@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #000;
+}
+
+header {
+    display: flex; }
+  
+  .barraNavegacion {
+    width: 100%;
+    height: 80px;
+    background-color: #0b132b; }
+    .barraNavegacion ul {
+      float: right;
+      z-index: 1000; }
+      .barraNavegacion ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 15px;
+        transition: .5s linear; }
+        .barraNavegacion ul li:hover {
+          transform: scale(1.5); }
+        .barraNavegacion ul li a {
+          color: #fff;
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: bold;
+          transition: .5s linear;
+          padding: 12px 20px; }
+          .barraNavegacion ul li a:hover {
+            color: #00c9bd;
+            transform: scale(1.5); }
+  
+  .logo {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left: 100px;
+    font-weight: bold;
+    text-decoration: none; }
+    .logo:hover {
+      color: #00c9bd;
+      transition: .3s linear;
+      transform: scale(1.1); }
+    .logo a:hover {
+      transform: scale(1.1); }
+  
+  .botoncheck {
+    color: #fff;
+    font-size: 35px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none; }
+  
+  #check {
+    display: none; }
+  
+  @media (max-width: 965px) {
+    .logo {
+      padding-left: 20px; }
+    .botoncheck {
+      display: block;
+      margin-right: 10px; }
+    .listaPages {
+      position: absolute;
+      background: #2c3e50;
+      width: 100%;
+      height: 100vh;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 1000; }
+    .barraNavegacion ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px; }
+      .barraNavegacion ul li a {
+        font-size: 20px; }
+    #check:checked ~ ul {
+      left: 0; } }
+
+
+
+/* //--BARRA LATERAL--// */
+
+.btnX{
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background: #1b1b1b;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+}
+.btnX.click{
+  left: 260px;
+}
+.btnX span{
+  color: white;
+  font-size: 28px;
+  line-height: 45px;
+}
+.btnX.click span:before{
+  content: '\f00d';
+}
+.btnX:hover {
+    background-color: #00c9bd;
+}
+
+
+.barraLateral{
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  left: -250px;
+  background: #1b1b1b;
+  transition: left 0.4s ease;
+  z-index: 999;
+}
+.barraLateral.show{
+  left: 0px;
+}
+.barraLateral .text{
+  color: #00c9bd;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: #1e1e1e;
+  letter-spacing: 1px;
+}
+.barraLateral ul{
+    z-index: 2000;
+  background: #1b1b1b;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.barraLateral ul li{
+  line-height: 60px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.barraLateral button{
+    background: #1b1b1b;
+    height: 70px;
+    width: 100%;
+    list-style: none;
+    z-index: 1000;
+}
+
+.barraLateral ul li button {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
+    z-index: 1000;
+}
+
+.barraLateral ul li.active button{
+    color: #00c9bd;
+    background: #1e1e1e;
+    border-left-color: #00c9bd;
+  }
+.barraLateral ul li button:hover{
+    background: #1e1e1e;
+    cursor: pointer;
+  }
+
+
+/* --- SECCION USUARIO --- */
+.main-0 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1.5em;
+    background-color: #000; }
+    .main-0 h1 {
+      max-width: 1100px;
+      color: #00c9bd;
+      font-size: 3rem;
+      margin: auto;
+      padding-bottom: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center; }
+    .main-0 p {
+      color: #fff;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      max-width: 1100px;
+      text-align: justify;
+      margin: auto;
+      font-size: 1.5rem;
+      margin-bottom: 30px; }
+      .main-0 p span {
+        font-weight: bolder;
+        color: #00c9bd;
+        text-transform: uppercase;
+        font-size: 1.7rem; }
+      .main-0 p a {
+        color: #00c9bd;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.7rem; }
+
+.seccionUsuario {
+    max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #3a506b;
+  background: linear-gradient(-45deg, #3a506b, #6492bd, #010103);
+  box-shadow: 0 0 50px 0 rgba(0, 201, 189, 0.3); 
+  margin-top: 15px;
+}
+.contedorUsuario {
+    display: flex;
+    width: 100%;
+}
+
+/* PROMOCIONES */
+#promociones {
+    display: none;
+}
+.main-3 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1.5em;
+    background: radial-gradient(circle, black 85%, #00c9bd 100%); }
+  
+  .seccion-promocion-1 {
+    display: flex; }
+    .seccion-promocion-1 h1 {
+      color: #00c9bd;
+      font-size: 3rem;
+      margin: auto;
+      font-weight: 900;
+      text-transform: uppercase;
+      width: 50%;
+      text-align: center; }
+    .seccion-promocion-1 p {
+      color: #fff;
+      text-align: justify;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      display: block;
+      justify-content: center;
+      width: 50%; }
+      .seccion-promocion-1 p span {
+        font-weight: bolder;
+        color: #00c9bd;
+        text-transform: uppercase;
+        font-size: 1.7rem; }
+      .seccion-promocion-1 p a {
+        color: #00c9bd;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.7rem; }
+  
+  .seccion-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .seccion-grid > div {
+      background-size: cover;
+      padding: 1, 5rem; }
+  
+  .grid-promocion {
+    background-position: center;
+    padding: 1.5rem;
+    border: 3px solid #00c9bd; }
+    .grid-promocion h2 {
+      font-size: 2.5rem;
+      color: #d99a07;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-shadow: 3px 2px #2c3e50; }
+    .grid-promocion h3 {
+      font-size: 1.7rem;
+      color: #000;
+      font-weight: 600;
+      text-shadow: 2px 2px #fff; }
+  
+  .grid-promocion1 {
+    position: relative;
+    background-image: url("../img/cancun-mexico.jpg");
+    height: 15rem; }
+    .grid-promocion1::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.2); }
+  
+  .grid-promocion2 {
+    position: relative;
+    background-image: url("../img/auto-0km.jpg");
+    height: 15rem; }
+    .grid-promocion2::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.2); }
+  
+  .grid-promocion3 {
+    position: relative;
+    background-image: url("../img/cataratas.jpg");
+    height: 15rem; }
+    .grid-promocion3::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.2); }
+  
+  .grid-boton {
+    position: relative;
+    border: 3px solid #010103;
+    padding: 0.2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #fff;
+    background: #00c9bd;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 120px;
+    border: 3px solid #00c9bd;
+    border-radius: 3rem; }
+    .grid-boton:hover {
+      background: #00c9bd;
+      color: #000;
+      border: 3px solid #000; }
+  
+  @media (min-width: 800px) {
+    .main-3 {
+      padding: 4rem 4rem; }
+    .seccion-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "promo1 promo1" "promo2 promo3";
+      gap: 3rem; }
+      .seccion-grid .grid-promocion1 {
+        grid-area: promo1;
+        height: 400px;
+        padding: 4rem; }
+      .seccion-grid .grid-promocion2 {
+        grid-area: promo2;
+        height: 20rem;
+        padding: 2rem; }
+      .seccion-grid .grid-promocion3 {
+        grid-area: promo3;
+        height: 20rem;
+        padding: 2rem; }
+      .seccion-grid .grid-promocion {
+        font-size: 45px;
+        text-align: center;
+        color: #fc5406; }
+        .seccion-grid .grid-promocion h2 {
+          font-size: 2.5rem;
+          color: #d99a07; }
+        .seccion-grid .grid-promocion h3 {
+          font-size: 2rem;
+          color: #fff; } }
+  
+  @media (max-width: 900px) {
+    .seccion-promocion-1 {
+      display: block; }
+      .seccion-promocion-1 h1 {
+        font-size: 1.7rem;
+        width: 100%;
+        margin-bottom: 20px; }
+      .seccion-promocion-1 p {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+        padding: 15px; }
+        .seccion-promocion-1 p span {
+          font-size: 1rem; }
+        .seccion-promocion-1 p a {
+          font-size: 1rem; } }
+
+
+/* --- DESCUENTOS --- */
+#descuentos {
+    display: none;
+}
+
+.main-2 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 1.5em;
+    background-color: #000; }
+    .main-2 h1 {
+      max-width: 1100px;
+      color: #00c9bd;
+      font-size: 3rem;
+      margin: auto;
+      padding-bottom: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      background-color: #000;
+      text-align: center; }
+    .main-2 p {
+      color: #fff;
+      max-width: 1100px;
+      text-align: justify;
+      margin: auto;
+      font-size: 1.5rem;
+      margin-bottom: 30px; }
+      .main-2 p span {
+        font-weight: bolder;
+        color: #00c9bd;
+        text-transform: uppercase;
+        font-size: 1.7rem; }
+      .main-2 p a {
+        color: #00c9bd;
+        text-decoration: none;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.7rem; }
+  
+  .seccion-descuentos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px; }
+  
+  .descuentos {
+    display: flex;
+    width: 45%;
+    height: 10%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 9px;
+    border: solid #00c9bd;
+    background: #0b132b;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    flex: 1; }
+  
+  .descuento-imagen {
+    width: 85%;
+    height: 300px;
+    transition: 1s;
+    opacity: 0.8; }
+  
+  .descuento-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 20px; }
+    .descuento-descripcion h2 {
+      color: #00c9bd;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .descuento-descripcion p {
+      font-size: 1.3rem;
+      text-align: center;
+      color: #fff; }
+    .descuento-descripcion .descuento-boton {
+      background: #010103;
+      color: #fff;
+      border: 3px solid #00c9bd;
+      padding: 0.2rem 1rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      width: 100%;
+      height: 50px;
+      border-radius: 3rem;
+      margin-top: 25px; }
+  
+  .descuento-boton:hover {
+    color: #000;
+    background: #00c9bd;
+    transition: 0.5s; }
+  
+  @media (max-width: 950px) {
+    .seccion-descuentos {
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto; } }
+  
+  @media (max-width: 425px) {
+    .main-4 h1 {
+      font-size: 2rem; }
+    .descuento-imagen img {
+      width: 100%;
+      height: 200px; }
+    .seccion-descuentos {
+      display: block; }
+    .descuentos {
+      width: 100%;
+      margin-bottom: 15px; } }
+
+
+/* -- VER BENEFICIOS */
+
+#beneficios {
+  display: none;
+}
