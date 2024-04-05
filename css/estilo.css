@@ -35,10 +35,13 @@ nav {
         text-transform: uppercase;
         font-weight: bold;
         transition: .5s linear;
-        padding: 12px 20px; }
+        padding: 12px 20px;
+        text-decoration: none;
+      }
         nav ul li a:hover {
           color: #00c9bd;
-          transform: scale(1.5); }
+          transform: scale(1.5);
+         }
 
 .logo {
   color: #fff;
